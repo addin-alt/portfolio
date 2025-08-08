@@ -1,15 +1,32 @@
 :root {
     --maroon: #800000;
-    --light-gray: #a45656b6;
-    --dark-gray: #222;
+    --light-gray: #a45656b6; /* This is semi-transparent, keep if intentional */
+    --dark-gray: #222222;
     --accent: #ffcccc;
+    --white-transparent: rgba(255, 255, 255, 0.85);
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-primary);
+    color: var(--dark-gray);
+    background: #fff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Background Animation */
 .bg-animation {
     position: fixed;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-45deg, var(--maroon), var(--light-gray), #999, var(--maroon));
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, var(--maroon), var(--light-gray), #999999, var(--maroon));
     background-size: 400% 400%;
     animation: gradient 12s ease infinite;
     z-index: -1;
@@ -20,156 +37,292 @@
     100% { background-position: 0% 50%; }
 }
 
-body {
-    margin: 100;
-    font-family: 'Segoe UI', sans-serif;
+/* Container to center and constrain content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px 60px;
     color: var(--dark-gray);
 }
 
-header {
-    text-align: center;
-    padding: 40px 0;
-    color: rgb(0, 0, 0);
+header .profile-pic img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--maroon);
+    margin-bottom: 20px;
 }
-.resume-btn {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--maroon);
-    padding: 10px 20px;
-    border-radius: 12px;
-    margin-top: 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.resume-btn:hover {
-    background: white;
-}
-.container {
-    max-width: 1000px;  /* maximum width */
-    width: 100%;        /* take full width up to max-width */
-    margin: 0 auto;     /* center horizontally */
-    padding: 0 10px;    /* optional: horizontal padding */
-    vertical-align: middle;
-}
-
 
 .typing {
-    text-align: center;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid var(--accent);
-    animation: typing 3s steps(22) 1s 1 normal both, blink 0.7s step-end infinite;
+    font-weight: 700;
+    font-size: 2rem;
+    max-width: 24ch;
+    animation:
+        typing 3s steps(24) 1s 1 normal both,
+        blink 0.7s step-end infinite;
+    margin-bottom: 10px;
 }
+
 @keyframes typing {
     from { width: 0; }
-    to { width: 100%; }
+    to { width: 24ch; }
 }
+
 @keyframes blink {
     50% { border-color: transparent; }
 }
 
-section {
-    text-align: center;
-    padding: 10px 10px;
-    background: rgba(255,255,255,0.85);
-    margin: 20px 10px;
-    border-radius: 10px;
-    max-width: 1020px;  /* maximum width */
-    width: 100%;        /* take full width up to max-width */
-    margin: 10px auto;     /* center horizontally */
-    padding: 0px 20px;
+header h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0 0 15px;
+    line-height: 1.4;
+}
+
+.badges img {
+    margin: 5px 5px 0;
     vertical-align: middle;
 }
 
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--maroon);
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(128, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.resume-btn:hover,
+.resume-btn:focus {
+    background: #fff;
+    color: var(--maroon);
+    box-shadow: 0 6px 10px rgba(128, 0, 0, 0.5);
+}
+
+/* Sections */
+section {
+    background: var(--white-transparent);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    max-width: 1200px;
+    color: var(--dark-gray);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+section h1, section h2, section h3 {
+    color: var(--maroon);
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+section ul li,
+section p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.highlight {
+    font-weight: 700;
+    color: var(--maroon);
+}
+
+/* Tech Stack Badges */
+.tech-section .badges {
+    margin-top: 10px;
+}
+
+.tech-section .badges img.badge {
+    margin: 6px 8px 6px 0;
+    vertical-align: middle;
+}
+
+/* Project List */
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
+
 .project {
-    background: white;
-    padding: 15px;
-    border-left: 5px solid var(--maroon);
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff;
+    padding: 20px;
+    border-left: 6px solid var(--maroon);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+
+.project:hover,
+.project:focus-within {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+
+.project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--maroon);
+}
+
+.project p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
 .project a {
     color: var(--maroon);
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
+    margin-right: 10px;
+    transition: text-decoration 0.2s ease;
 }
-.project a:hover {
+
+.project a:hover,
+.project a:focus {
     text-decoration: underline;
 }
 
+/* Form styling (if needed) */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
-form input, form textarea {
-    padding: 10px;
+
+form input,
+form textarea {
+    padding: 12px 15px;
     border: 1px solid var(--maroon);
     border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
 }
+
 form button {
-    background: var(--maroon);
+    background-color: var(--maroon);
     color: white;
-    padding: 10px;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
+    font-weight: 700;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-form button:hover {
-    background: var(--accent);
+
+form button:hover,
+form button:focus {
+    background-color: var(--accent);
     color: var(--maroon);
 }
 
+/* Footer */
 footer {
     background: var(--maroon);
     color: white;
     font-size: 17px;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 10px;
+    box-shadow: inset 0 1px 5px rgba(255,255,255,0.15);
 }
+
 footer a {
     color: var(--accent);
-    text-align: center;
     text-decoration: none;
+    margin: 0 8px;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
- .footer {
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #ffffff;
- }
 
+footer a:hover,
+footer a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Bottom copyright text */
+.footer {
+    text-align: center;
+    margin: 15px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Fade-in animations */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    animation: fadeInUp 0.8s forwards ease;
+    animation-delay: 0.3s;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-
+/* Back to Top button */
 #backToTop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     background: var(--maroon);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 16px;
     border-radius: 50%;
     cursor: pointer;
+    font-size: 22px;
     display: none;
-    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(128,0,0,0.4);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 10;
 }
-#backToTop:hover {
+
+#backToTop:hover,
+#backToTop:focus {
     background: var(--accent);
     color: var(--maroon);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h3 {
+        font-size: 1rem;
+    }
+
+    .typing {
+        font-size: 1.6rem;
+        max-width: 20ch;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
 }
