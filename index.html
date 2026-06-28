@@ -1,218 +1,736 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Addin | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/profile.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Al Addin, a front-end focused software developer building web applications, AI/ML systems, automation tools, and practical software products." />
+  <meta name="keywords" content="Al Addin, Addin Al, software developer, frontend developer, AI ML engineer, portfolio, GitHub, web developer" />
+  <meta name="author" content="Al Addin" />
+  <meta property="og:title" content="Al Addin | Front-End Developer Portfolio" />
+  <meta property="og:description" content="Formal software engineering portfolio with front-end, AI/ML, backend, cybersecurity, and automation projects." />
+  <meta property="og:type" content="website" />
+  <title>Al Addin | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/profile-placeholder.svg" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
 </head>
 <body>
-    <div class="bg-animation"></div>
+  <div class="page-progress" id="pageProgress"></div>
+  <div class="site-bg" aria-hidden="true"></div>
 
-    <header class="fade-in">
-        <div class="container">
-             <div class="profile-pic" style="flex: 0 0 150px;">
-            <img src="profile official.png" alt="Addin" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+  <!-- ==========================================================
+       EDIT YOUR PERSONAL DATA MOSTLY IN THIS HTML FILE.
+       CSS handles design only. JS handles animation only.
+       ========================================================== -->
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#top" class="brand" aria-label="Go to home">
+       
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#featured">Featured</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section-space" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"></p>
+          <h1 id="hero-title">I build clean, responsive, practical software with a product mindset.</h1>
+          <p class="hero-lead">
+            I am <strong>Al Addin</strong>, a Computer Science & Engineering student and developer from Dhaka, Bangladesh. My work spans front-end engineering, Python/FastAPI, Django, AI/ML notebooks, automation tools, and applied software systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary magnetic" href="#featured">View Selected Work</a>
+            <a class="btn secondary magnetic" href="assets/cv.pdf" download>Download Resume</a>
+            <a class="btn ghost magnetic" href="https://github.com/addin-alt" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="hero-tags" aria-label="Core strengths">
+            <span>Responsive UI</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>FastAPI</span>
+            <span>AI/ML</span>
+          </div>
         </div>
-            <h1 class="typing">Hi, I'm Addin</h1>
-            <h3> | Web & Software Developer | AI/ML Engineer |<br> | Problem Solver | Data Security & Vulnearability Analyst | Buliding Real World Solutions | </h3>
-            <p class="badges">
-                <img src="https://img.shields.io/badge/-AI/ML-800000?style=flat-square&logo=python&logoColor=white">
-                <img src="https://img.shields.io/badge/-Coding-808080?style=flat-square&logo=cplusplus&logoColor=white">
-                <img src="https://img.shields.io/badge/-OpenSource-800000?style=flat-square&logo=github&logoColor=white">
-            </p>
-            <a class="resume-btn" href="Addin_resume.pdf" download>📄 Download Resume</a>
-        </div>
-    </header>
 
-    <section id="about" class="fade-in">
-<div class="container">
-    <br>
-    <h1>About Me</h1>
-    <p>
-        Hi, I'm <span class="highlight">Al Addin</span> (he/him) — a passionate learner, tech enthusiast, and problem solver. 
-        My journey into Computer Science—especially AI and Machine Learning—is fueled by curiosity, innovation, and the drive for self-development.
-    </p>
-
-    <h2>Current Position</h2>
-    <ul>
-        💼 <strong>Chief Technology Officer (CTO)</strong> at ClickCraft Solutions</li>
-    </ul>
-
-    <h2>Previous Experience</h2>
-    <ul>
-        <strong>Data Security and Vulnerability Analyst</strong> at CyberR Sys.Info Tech <br>
-        <strong>Data Security Analyst</strong> at AVP Hybrid <br>
-        <strong>Junior Robotics Programmer</strong> at Notre Dame Science Club <br>
-        <strong>NDDC Silver Wing</strong> at Notre Dame Debating Club <br>
-    </ul>
-
-    <h2>Education</h2>
-    <ul>
-    🎓Studying <strong>B.Sc(Engr.) in Computer Science & Engineering</strong> at IUBAT—International University of Business Agriculture and Technology <br>
-        Studying at <strong>Institute of Modern Languages</strong>, University of Dhaka <br>
-        Studied at <strong>Notre Dame College, Dhaka</strong> <br>
-        Went to <strong>A To Z International School</strong> <br>
-        Went to <strong>Mirpur Shiddhanta High School</strong> <br>
-    </ul>
-
-    <h2>Passion & Interests</h2>
-    <p>
-        I’m passionate about learning new technologies, exploring innovative ideas, and constantly improving myself. 
-        My professional focus includes AI, Machine Learning, and Cybersecurity — but I’m equally fascinated by robotics, creative problem solving, and collaborative innovation.
-    </p><br>
-
-
-    </section>
-
-    <!-- Tech Stack Section (paste into your page) -->
-<section id="tech-stack" class="tech-section" aria-labelledby="tech-heading">
-  <div class="tech-container">
-    <br>
-    <h2 id="tech-heading">Tech Stack</h2>
-
-    <div class="tech-group">
-      <h3>Programming Languages</h3>
-      <div class="badges">
-        <img class="badge" src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
-        <img class="badge" src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
-        <img class="badge" src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-        <img class="badge" src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-        <img class="badge" src="https://img.shields.io/badge/JavaFX-%23FF0000.svg?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX">
-        <img class="badge" src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
-        <img class="badge" src="https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-      <br>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="tech-group">
-
-      <h3>Web & App Development</h3>
-      <div class="badges">
-        <img class="badge" src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET">
-        <img class="badge" src="https://img.shields.io/badge/Django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django">
-        <img class="badge" src="https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress">
-        <img class="badge" src="https://img.shields.io/badge/Apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white" alt="Apache">
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="tech-group">
-      <h3>Database & Backend</h3>
-      <div class="badges">
-        <img class="badge" src="https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-        <img class="badge" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" alt="Microsoft SQL Server">
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="tech-group">
-      <h3>Data Science & Machine Learning</h3>
-      <div class="badges">
-        <img class="badge" src="https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-        <img class="badge" src="https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
-        <img class="badge" src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch">
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="tech-group">
-      <h3>Tools & Platforms</h3>
-      <div class="badges">
-        <img class="badge" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-        <img class="badge" src="https://img.shields.io/badge/Jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white" alt="Jira">
-        <img class="badge" src="https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=twilio&logoColor=white" alt="Twilio">
-        <img class="badge" src="https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="tech-group">
-      <h3>Hardware & Other Tech</h3>
-      <div class="badges">
-        <img class="badge" src="https://img.shields.io/badge/Raspberry_Pi-C51A4A?style=for-the-badge&logo=raspberry-pi&logoColor=white" alt="Raspberry Pi">
-        <img class="badge" src="https://img.shields.io/badge/OpenGL-white?style=for-the-badge&logo=opengl&logoColor=black" alt="OpenGL">
-        <img class="badge" src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA">
-      </div>
-      <br>
-    </div>
-  </div>
-</section>
-
-
-</style>
-
-
-    <section id="projects" class="fade-in">
-        <div class="container">
-            <br>
-            <h2>Highlighted Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>Pharmacy Management System</h3>
-                    <p>A Pharmacy Management System streamlines medicine inventory, sales, and prescription tracking for efficient pharmacy operations.
-</p>
-                    <a href="https://github.com/addin-alt/Pharmacy-Management-System" target="_blank">GitHub</a> | 
-                    <a href="https://youtu.be/4g1kxnZKhNw?si=X8v0CAspj_vh-j_I" target="_blank">Live Demo</a>
-                </div>
-                <div class="project">
-                    <h3>Round-Robin-CPU-Scheduler</h3>
-                    <p>This project simulates the Round Robin CPU Scheduling Algorithm using Python. It calculates: - Waiting Time (WT) - Turnaround Time (TAT) - Average WT and TAT</p>
-                    <a href="https://github.com/addin-alt/Round-Robin-CPU-Scheduler" target="_blank">GitHub</a> | 
-                    <a href="https://youtu.be/Nf--zXm-hn0?si=XImfkjpZVep3RsSU" target="_blank">Live Demo</a>
-                </div>
-                <div class="project">
-                    <h3>Inventory Management System (ASP.NET MVC)</h3>
-                    <p>The Inventory Management System is a web-based application built with ASP.NET MVC for tracking and managing products, stock levels, and sales. It offers features like product management, sales tracking, and reporting, with secure user authentication.</p>
-                    <a href="https://github.com/addin-alt/Inventory-Management-System" target="_blank">GitHub</a> | 
-                    <a href="https://youtu.be/5EK0wKUBmL8?si=UR6k21_pPTHa7hO1&t=105" target="_blank">Live Demo</a>
-                </div>
-                <div class="project">
-                    <h3>Snake Game in C++</h3>
-                    <p>This is a simple console-based Snake Game written in C++ using object-oriented principles.</p>
-                    <a href="https://github.com/addin-alt/password-checker" target="_blank">GitHub</a> | 
-                    <a href="https://youtube.com/shorts/uVXShsZ7fWw?si=Kfs01dkxRZXgBzgt" target="_blank">Live Demo</a>
-                </div>
-                <div class="project">
-                    <h3>Root-Finder-for-Real-World-Physical-Systems-using-Bisection-Method</h3>
-                    <p>Developed a program that uses the Bisection Method to find roots of nonlinear equations that arise in real-world engineering or physics problems (e.g., fluid dynamics, thermodynamics, electrical circuits).</p>
-                    <a href="https://github.com/addin-alt/Root-Finder-for-Real-World-Physical-Systems-using-Bisection-Method" target="_blank">GitHub</a> | 
-                    <a href="https://youtube.com/shorts/bDbL5SZVxao?si=BUw8bKXmasbFqria" target="_blank">Live Demo</a>
-                </div>
-                <div class="project">
-                    <h3>Tic-Tac-Toe</h3>
-                    <p>Tic Tac Toe Game - Simple Console Implementation</p>
-                    <a href="https://github.com/addin-alt/Tic-Tac-Toe" target="_blank">GitHub</a> | 
-                    <a href="https://youtu.be/lzVmDu5L-eI?si=qBZBhZ90MUCRZJbg&t=6" target="_blank">Live Demo</a>
-                </div>
-                
+        <aside class="hero-card reveal" aria-label="Profile summary">
+          <div class="profile-mini">
+            <img src="assets/dp.jpeg" alt="Al Addin profile placeholder" />
+            <div>
+              <h2>Al Addin</h2>
+              <p>Software Developer • AI/ML Learner • Problem Solver</p>
             </div>
-        </div>
+          </div>
+          <div class="status-row">
+            <span class="status-dot"></span>
+            Available for internships, junior roles and project collaboration
+          </div>
+          <dl class="quick-facts">
+            <div><dt>Location</dt><dd>Mirpur, Dhaka, Bangladesh</dd></div>
+            <div><dt>Education</dt><dd>B.Sc in Computer Science & Engineering, International University of Business Agriculture and Technology (IUBAT)</dd></div>
+            <div><dt>Focus</dt><dd>Web & Applied Software Development</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:info.addincse@gmail.com">info.addincse@gmail.com</a></dd></div>
+          </dl>
+        </aside>
+      </div>
     </section>
 
+    <!-- SNAPSHOT -->
+    <section class="section-space compact" aria-label="Professional snapshot">
+      <div class="container metrics-grid reveal-group">
+        <article class="metric-card reveal"><span class="metric-number" data-count="35">0</span><p>Public GitHub repositories</p></article>
+        <article class="metric-card reveal"><span class="metric-number" data-count="20">0</span><p>Portfolio-ready projects shown</p></article>
+        <article class="metric-card reveal"><span class="metric-number" data-count="6">0</span><p>Major development areas</p></article>
+        <article class="metric-card reveal"><span class="metric-number" data-count="2026">0</span><p>Recent project refresh year</p></article>
+      </div>
+    </section>
 
-    <footer class="fade-in">
-        <div class="container">
-            <p>Let's Connect:</p>
-            <a href="https://facebook.com/addin.alt">Facebook</a> |
-            <a href="https://instagram.com/addin.alt">Instagram</a> |
-            <a href="https://linkedin.com/in/addin-alt">LinkedIn</a> |
-            <a href="mailto:info.addincse@gmail.com">Email</a>
+    <!-- ABOUT -->
+    <section class="section-space" id="about" aria-labelledby="about-title">
+      <div class="container two-col">
+        <div class="section-heading sticky-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 id="about-title">A developer moving from beginner projects to complete software systems.</h2>
         </div>
-    </footer>
+        <div class="content-stack reveal-group">
+          <article class="panel reveal">
+            <h3>Professional Summary</h3>
+            <p>
+              I started with simple academic and console-based projects, but over the last year I have been building more complete applications: career tooling with FastAPI, prediction systems with machine learning, Django business systems, responsive front-end products and practical automation utilities.
+            </p>
+            <p>
+              My current portfolio direction is web and applied software development focused, but I also want recruiters to understand that I can work across the stack, reason about data, write Python tools and document projects clearly.
+            </p>
+          </article>
+          <article class="panel reveal">
+            <h3>What I Want Recruiters to Notice</h3>
+            <ul class="check-list">
+              <li>Ability to turn a real-world problem into a usable interface.</li>
+              <li>Consistency across web, Python, database and AI/ML work.</li>
+              <li>Cleaner project documentation and GitHub presentation.</li>
+              <li>Comfort with responsive layouts, vanilla JavaScript, Tailwind-style design systems and practical UX.</li>
+            </ul>
+          </article>
+          <article class="panel reveal">
+            <h3>Current Direction</h3>
+            <p>
+              I am preparing myself for software developer, full-stack trainee, Python developer and AI/ML project roles where I can contribute to production-style web applications while continuing to improve software design, testing and deployment practices.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <button id="backToTop">⬆</button>
+    <!-- IDENTITY STRIP -->
+    <section class="section-space compact" aria-label="Professional identity">
+      <div class="container identity-grid reveal-group">
+        <article class="identity-card reveal">
+          <span>01</span>
+          <h3>Front-End Interface Builder</h3>
+          <p>Responsive pages, product landing pages, dashboards, forms and smooth UI interactions.</p>
+        </article>
+        <article class="identity-card reveal">
+          <span>02</span>
+          <h3>Python Software Builder</h3>
+          <p>Automation utilities, FastAPI services, CLI tools, data handling scripts and SQLite-backed applications.</p>
+        </article>
+        <article class="identity-card reveal">
+          <span>03</span>
+          <h3>AI/ML Experimenter</h3>
+          <p>Notebook-based modeling, feature engineering, ranking, classification, model comparison and visualization.</p>
+        </article>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-     <div class="footer">
-        © 2025 Al Addin — All rights reserved.
+    <!-- SKILLS -->
+    <section class="section-space" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Skills Information</p>
+          <h2 id="skills-title">A concise skill map for recruiters and technical reviewers.</h2>
+        </div>
+
+        <div class="skills-grid reveal-group">
+          <article class="skill-card reveal">
+            <h3>Front-End</h3>
+            <p>HTML5, CSS3, JavaScript, Tailwind CSS, responsive design, accessibility basics, UI animation, form UX, portfolio systems.</p>
+            <div class="skill-bar"><span style="width: 88%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Backend</h3>
+            <p>Python, FastAPI, Django, SQLite, REST API structure, authentication concepts, MVC pattern, data persistence.</p>
+            <div class="skill-bar"><span style="width: 78%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>AI / Machine Learning</h3>
+            <p>Pandas, NumPy, Scikit-learn, XGBoost, Random Forest, Naive Bayes, model evaluation, visualization, Jupyter Notebook.</p>
+            <div class="skill-bar"><span style="width: 74%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Software Foundations</h3>
+            <p>C, C++, Java, C#, algorithms, compiler design basics, scheduling algorithms, numerical methods, OOP concepts.</p>
+            <div class="skill-bar"><span style="width: 76%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Data & Security</h3>
+            <p>Data security awareness, DFA-based access control, password tools, vulnerability mindset, structured validation.</p>
+            <div class="skill-bar"><span style="width: 70%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Tools & Workflow</h3>
+            <p>GitHub, Git, Docker basics, Makefile basics, project README writing, Figma, Jira, VS Code, deployment workflow.</p>
+            <div class="skill-bar"><span style="width: 72%"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section-space compact" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technology Stack</p>
+          <h2 id="stack-title">Grouped by practical use, not just badges.</h2>
+          <br>
+        </div>
+        <div class="stack-table reveal">
+          <div class="stack-row"><strong>Languages</strong><span>Python, JavaScript, C, C++, Java, C#, PHP</span></div>
+          <div class="stack-row"><strong>Front-End</strong><span>HTML5, CSS3, Tailwind CSS, Vanilla JS, responsive layout, animation</span></div>
+          <div class="stack-row"><strong>Backend</strong><span>FastAPI, Django, ASP.NET MVC, SQLite, MySQL, SQL Server</span></div>
+          <div class="stack-row"><strong>AI/ML</strong><span>Pandas, NumPy, Scikit-learn, XGBoost, Random Forest, Naive Bayes, Streamlit</span></div>
+          <div class="stack-row"><strong>Systems</strong><span>Arduino, Raspberry Pi, OpenGL, compiler design, scheduling, numerical methods</span></div>
+          <div class="stack-row"><strong>Workflow</strong><span>GitHub, Docker, GitHub Actions, Jira, Figma, documentation, README design</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECT DEEP DIVES -->
+    <section class="section-space" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="featured-title">Projects that should be seen first.</h2>
+          <p class="section-note">These are presented as recruiter-facing case studies because they show stronger engineering maturity than beginner games or single-algorithm demos.</p>
+        </div>
+
+        <div class="featured-list reveal-group">
+          <article class="featured-card reveal">
+            <div class="project-meta"><span>Python • FastAPI • SQLite • Docker</span><span>Career Tools</span></div>
+            <h3>Career Copilot</h3>
+            <p>
+              A production-style portfolio project that analyzes resume fit against job descriptions, scores missing skills, generates improvement plans, and tracks job applications using SQLite. It demonstrates API design, CLI thinking, testing, Docker usage, CI workflow, and product-oriented backend design.
+            </p>
+            <ul class="mini-list">
+              <li>Resume-to-job match scoring and keyword gap analysis</li>
+              <li>FastAPI REST endpoints, CLI workflow, SQLite persistence</li>
+              <li>Unit tests, Docker setup, GitHub Actions, architecture documentation</li>
+            </ul>
+            <a class="text-link" href="https://github.com/addin-alt/career-copilot" target="_blank" rel="noreferrer">Open repository</a>
+          </article>
+
+          <article class="featured-card reveal">
+            <div class="project-meta"><span>Python • XGBoost • Streamlit • Simulation</span><span>AI/ML</span></div>
+            <h3>FIFA World Cup 2026 Predictive AI/ML</h3>
+            <p>
+              A machine learning framework for forecasting tournament outcomes using football analytics, feature engineering, contextual variables, stacked XGBoost models, and Monte Carlo tournament simulation.
+            </p>
+            <ul class="mini-list">
+              <li>Uses travel, rest, altitude, Elo, and opponent-strength features</li>
+              <li>Applies XGBoost goal and outcome modeling</li>
+              <li>Includes Streamlit dashboard and tournament probability simulation</li>
+            </ul>
+            <a class="text-link" href="https://github.com/addin-alt/fifa-wc-2026-prediction-ai-ml" target="_blank" rel="noreferrer">Open repository</a>
+          </article>
+
+          <article class="featured-card reveal">
+            <div class="project-meta"><span>Jupyter • Scikit-learn • XGBoost</span><span>Machine Learning</span></div>
+            <h3>Loan Approval Prediction ML</h3>
+            <p>
+              A supervised learning project for predicting loan approval decisions using preprocessing, engineered financial features, Naive Bayes probability reasoning, A* ranking logic, Random Forest, and XGBoost evaluation.
+            </p>
+            <ul class="mini-list">
+              <li>Feature engineering with income-to-loan and creditworthiness scoring</li>
+              <li>Random Forest and XGBoost model comparison</li>
+              <li>Evaluation with accuracy, precision, recall, F1, ROC-AUC, and cross-validation</li>
+            </ul>
+            <a class="text-link" href="https://github.com/addin-alt/loan-approval-prediction-ml" target="_blank" rel="noreferrer">Open repository</a>
+          </article>
+
+          <article class="featured-card reveal">
+            <div class="project-meta"><span>Django • Auth • Inventory • Reporting</span><span>Business App</span></div>
+            <h3>Sales and Inventory Management System</h3>
+            <p>
+              A Django-based business application for product tracking, stock management, sales records, authentication, and reporting. This project shows practical backend use with a business workflow and administrative UI thinking.
+            </p>
+            <ul class="mini-list">
+              <li>Product and stock management workflow</li>
+              <li>User authentication and sales reporting concepts</li>
+              <li>Business-facing CRUD application structure</li>
+            </ul>
+            <a class="text-link" href="https://github.com/addin-alt/Sales-and-Inventory-Management-System" target="_blank" rel="noreferrer">Open repository</a>
+          </article>
+
+          <article class="featured-card reveal">
+            <div class="project-meta"><span>HTML • Tailwind CSS • JavaScript</span><span>Student Utility</span></div>
+            <h3>IUBAT CGPA Calculator</h3>
+            <p>
+              A lightweight academic utility that allows IUBAT students to calculate GPA/CGPA using course credits and grades. It is a simple but useful front-end product with a real target user group.
+            </p>
+            <ul class="mini-list">
+              <li>Dynamic course input and grade calculation</li>
+              <li>Clean responsive interface with no backend requirement</li>
+              <li>Practical user-focused tool built for academic tracking</li>
+            </ul>
+            <a class="text-link" href="https://github.com/addin-alt/IUBAT-CGPA-Calculator" target="_blank" rel="noreferrer">Open repository</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT FILTERS + ARCHIVE -->
+    <section class="section-space" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project Archive</p>
+          <h2 id="projects-title">A wider view of my GitHub work.</h2>
+          <p class="section-note">Use this archive to show breadth. Project data is hardcoded in HTML so you can edit names, descriptions, and links without touching JavaScript.</p>
+        </div>
+
+        <div class="filter-row reveal" aria-label="Project filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="frontend">Front-End</button>
+          <button class="filter-btn" type="button" data-filter="backend">Backend</button>
+          <button class="filter-btn" type="button" data-filter="ml">AI/ML</button>
+          <button class="filter-btn" type="button" data-filter="systems">Systems</button>
+          <button class="filter-btn" type="button" data-filter="security">Security</button>
+        </div>
+
+        <div class="project-grid reveal-group">
+          <article class="project-card reveal" data-category="backend ml">
+            <span class="project-index">01</span>
+            <h3>Career Copilot</h3>
+            <p>Resume analyzer, job match scorer, keyword gap detector, improvement planner, and application tracker built with Python, FastAPI, SQLite, CLI, Docker, tests, and CI.</p>
+            <div class="chips"><span>Python</span><span>FastAPI</span><span>SQLite</span></div>
+            <a href="https://github.com/addin-alt/career-copilot" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="ml">
+            <span class="project-index">02</span>
+            <h3>FIFA WC 2026 Prediction AI/ML</h3>
+            <p>Predictive football analytics system using XGBoost, contextual features, Streamlit visualization, and Monte Carlo simulation for tournament forecasting.</p>
+            <div class="chips"><span>XGBoost</span><span>Streamlit</span><span>Simulation</span></div>
+            <a href="https://github.com/addin-alt/fifa-wc-2026-prediction-ai-ml" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <span class="project-index">03</span>
+            <h3>Artois Landing Page</h3>
+            <p>Modern responsive company landing page focused on clean brand presentation, service blocks, performance, mobile layout, and professional visual hierarchy.</p>
+            <div class="chips"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+            <a href="https://github.com/addin-alt/Artois-landing-page" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="ml">
+            <span class="project-index">04</span>
+            <h3>Loan Approval Prediction ML</h3>
+            <p>Loan approval classification workflow using preprocessing, Naive Bayes, A* applicant ranking, Random Forest, XGBoost, model metrics, and visual outputs.</p>
+            <div class="chips"><span>Jupyter</span><span>Random Forest</span><span>XGBoost</span></div>
+            <a href="https://github.com/addin-alt/loan-approval-prediction-ml" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <span class="project-index">05</span>
+            <h3>Sales and Inventory Management System</h3>
+            <p>Django-based product, stock, authentication, and sales reporting system designed for daily business management workflows.</p>
+            <div class="chips"><span>Django</span><span>HTML</span><span>CRUD</span></div>
+            <a href="https://github.com/addin-alt/Sales-and-Inventory-Management-System" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <span class="project-index">06</span>
+            <h3>IUBAT CGPA Calculator</h3>
+            <p>Student-focused CGPA calculator using HTML, Tailwind CSS, and JavaScript to calculate grades and CGPA from course inputs.</p>
+            <div class="chips"><span>HTML</span><span>Tailwind</span><span>JavaScript</span></div>
+            <a href="https://github.com/addin-alt/IUBAT-CGPA-Calculator" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="systems">
+            <span class="project-index">07</span>
+            <h3>Lexical Analyzer Compiler Design</h3>
+            <p>Python lexer implementation for compiler design with token recognition, structured parsing behavior, and error handling.</p>
+            <div class="chips"><span>Python</span><span>Compiler</span><span>Lexer</span></div>
+            <a href="https://github.com/addin-alt/lexical-analyzer-compiler-design" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <span class="project-index">08</span>
+            <h3>Flight Reservation System</h3>
+            <p>Software application for flight search, booking, ticket management, and reservation workflow modeling.</p>
+            <div class="chips"><span>Python</span><span>Booking</span><span>Workflow</span></div>
+            <a href="https://github.com/addin-alt/flight-reservation-system" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="systems">
+            <span class="project-index">09</span>
+            <h3>Smart Radar System with Arduino</h3>
+            <p>Arduino radar system using sonar sensor, LCD display, buzzer, and LED alert logic to detect nearby objects.</p>
+            <div class="chips"><span>C++</span><span>Arduino</span><span>Sensor</span></div>
+            <a href="https://github.com/addin-alt/Smart-Radar-System-with-Arduino" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend backend">
+            <span class="project-index">10</span>
+            <h3>DOCX to PDF Converter</h3>
+            <p>Frontend and backend file conversion project combining responsive upload UI with API-based document conversion workflow.</p>
+            <div class="chips"><span>Frontend</span><span>Python</span><span>API</span></div>
+            <a href="https://github.com/addin-alt/doc-to-pdf-frontend" target="_blank" rel="noreferrer">Frontend</a>
+            <a href="https://github.com/addin-alt/doc-to-pdf-backend" target="_blank" rel="noreferrer">Backend</a>
+          </article>
+
+          <article class="project-card reveal" data-category="backend systems">
+            <span class="project-index">11</span>
+            <h3>PC Power Controller</h3>
+            <p>Python GUI utility for shutdown, restart, sleep, hibernate, and custom timed power actions.</p>
+            <div class="chips"><span>Python</span><span>GUI</span><span>Automation</span></div>
+            <a href="https://github.com/addin-alt/PC-Power-Controller" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="backend systems">
+            <span class="project-index">12</span>
+            <h3>PC Power Manager</h3>
+            <p>Python tool for managing PC power settings with timers, sleep, shutdown, hibernation, and energy usage tracking concepts.</p>
+            <div class="chips"><span>Python</span><span>Utility</span><span>Power</span></div>
+            <a href="https://github.com/addin-alt/PC-Power-Manager" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="security systems">
+            <span class="project-index">13</span>
+            <h3>SecureDFA Access Control</h3>
+            <p>DFA-based smart building access control system enforcing authentication sequences, zone restrictions, and error handling logic.</p>
+            <div class="chips"><span>Python</span><span>DFA</span><span>Security</span></div>
+            <a href="https://github.com/addin-alt/SecureDFA-AccessControl" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <span class="project-index">14</span>
+            <h3>Currency Converter</h3>
+            <p>Responsive currency converter web app with searchable dropdown UX, country flag support, and exchange-rate focused interface.</p>
+            <div class="chips"><span>HTML</span><span>Tailwind</span><span>JavaScript</span></div>
+            <a href="https://github.com/addin-alt/currency-converter" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="security backend">
+            <span class="project-index">15</span>
+            <h3>Blockchain Project</h3>
+            <p>Python blockchain implementation covering transactions, mining blocks, and transaction lookup by sender or recipient.</p>
+            <div class="chips"><span>Python</span><span>Blockchain</span><span>Transactions</span></div>
+            <a href="https://github.com/addin-alt/Blockchain-Project" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="security backend">
+            <span class="project-index">16</span>
+            <h3>Password Generator Strength Checker</h3>
+            <p>Python tool that generates secure passwords and checks strength based on length, characters, numbers, and symbols.</p>
+            <div class="chips"><span>Python</span><span>Security</span><span>CLI</span></div>
+            <a href="https://github.com/addin-alt/Password-Generator-Strength-Checker" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <span class="project-index">17</span>
+            <h3>Daily Expense Tracker</h3>
+            <p>Python personal expense tracker that saves records to JSON so users can preserve and review daily spending data.</p>
+            <div class="chips"><span>Python</span><span>JSON</span><span>Finance</span></div>
+            <a href="https://github.com/addin-alt/Daily-Expence-Tracker" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="security backend">
+            <span class="project-index">18</span>
+            <h3>Password Manager</h3>
+            <p>Secure personal password manager built to organize and manage credentials for practical personal use.</p>
+            <div class="chips"><span>Python</span><span>Security</span><span>Storage</span></div>
+            <a href="https://github.com/addin-alt/Password-Manager" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="systems">
+            <span class="project-index">19</span>
+            <h3>Round Robin CPU Scheduler</h3>
+            <p>Python simulator for Round Robin CPU scheduling with waiting time, turnaround time, and average performance calculation.</p>
+            <div class="chips"><span>Python</span><span>OS</span><span>Scheduling</span></div>
+            <a href="https://github.com/addin-alt/Round-Robin-CPU-Scheduler" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="systems">
+            <span class="project-index">20</span>
+            <h3>Root Finder for Physical Systems</h3>
+            <p>C++ numerical method project using bisection to find roots of nonlinear equations from engineering and physics contexts.</p>
+            <div class="chips"><span>C++</span><span>Numerical</span><span>Bisection</span></div>
+            <a href="https://github.com/addin-alt/Root-Finder-for-Real-World-Physical-Systems-using-Bisection-Method" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <span class="project-index">21</span>
+            <h3>Inventory Management System ASP.NET MVC</h3>
+            <p>Web-based inventory application for product management, stock tracking, sales reporting, and authenticated business workflows.</p>
+            <div class="chips"><span>ASP.NET MVC</span><span>HTML</span><span>Inventory</span></div>
+            <a href="https://github.com/addin-alt/Inventory-Management-System" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <span class="project-index">22</span>
+            <h3>Pharmacy Management System</h3>
+            <p>Java project for medicine inventory, sales, and prescription tracking within pharmacy operations.</p>
+            <div class="chips"><span>Java</span><span>Inventory</span><span>Management</span></div>
+            <a href="https://github.com/addin-alt/Pharmacy-Management-System" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <span class="project-index">23</span>
+            <h3>SnakeGame JS</h3>
+            <p>Browser-based Snake game with JavaScript controls, live score behavior, responsive play area, and interactive UI state.</p>
+            <div class="chips"><span>JavaScript</span><span>Game</span><span>Frontend</span></div>
+            <a href="https://github.com/addin-alt/SnakeGame-JS" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <span class="project-index">24</span>
+            <h3>ScriptWatch Web</h3>
+            <p>Lightweight stopwatch web application built with HTML, CSS, and JavaScript without frameworks.</p>
+            <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://github.com/addin-alt/ScriptWatch-web" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRONTEND QUALITY -->
+    <section class="section-space" id="frontend" aria-labelledby="frontend-title">
+      <div class="container two-col">
+        <div class="section-heading sticky-heading reveal">
+          <p class="eyebrow">Front-End Professionalism</p>
+          <h2 id="frontend-title">What this portfolio now proves from a front-end perspective.</h2>
+        </div>
+        <div class="content-stack reveal-group">
+          <article class="panel reveal">
+            <h3>Responsive Interface</h3>
+            <p>Mobile-first layout, fluid grids, compact cards, sticky navigation, accessible buttons, reduced-motion support and touch-friendly spacing.</p>
+          </article>
+          <article class="panel reveal">
+            <h3>Animation Discipline</h3>
+            <p>Animations are used for smooth reveal, hover feedback, progress indication, counters and subtle motion. The goal is premium polish, not distracting visual noise.</p>
+          </article>
+          <article class="panel reveal">
+            <h3>Editable Content</h3>
+            <p>Project cards, skills, profile text, timeline and contact details are hardcoded in HTML so you can update your information without rewriting CSS or JavaScript.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT THINKING -->
+    <section class="section-space" aria-labelledby="thinking-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Engineering Thinking</p>
+          <h2 id="thinking-title">How I approach a project.</h2>
+        </div>
+        <div class="process-grid reveal-group">
+          <article class="process-card reveal"><span>01</span><h3>Understand the Problem</h3><p>Define the user, workflow, expected output, and reason the project exists before choosing tools.</p></article>
+          <article class="process-card reveal"><span>02</span><h3>Design the Interface</h3><p>Create clean structure, readable hierarchy, responsive spacing, and interaction states for every device size.</p></article>
+          <article class="process-card reveal"><span>03</span><h3>Build the Core Logic</h3><p>Implement data flow, validation, storage, APIs, model logic, or algorithmic behavior depending on the project.</p></article>
+          <article class="process-card reveal"><span>04</span><h3>Document and Present</h3><p>Write README files, usage instructions, project goals, tech stack, feature list, and recruiter-facing summary.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section-space" id="experience" aria-labelledby="experience-title">
+      <div class="container two-col">
+        <div class="section-heading sticky-heading reveal">
+          <p class="eyebrow">Experience & Education</p>
+          <h2 id="experience-title">Formal background and activity areas.</h2>
+        </div>
+        <div class="timeline reveal-group">
+          <article class="timeline-item reveal">
+            <span class="time-dot"></span>
+            <p class="timeline-date">Current</p>
+            <h3>Junior Developer — Arotis Technology Limited</h3>
+            <p>Learning technical direction, digital product thinking and software/project designing.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="time-dot"></span>
+            <p class="timeline-date">Current</p>
+            <h3>B.Sc. in Computer Science & Engineering — IUBAT</h3>
+            <p>Studying computer science foundations, programming, software development, systems, and applied computing.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="time-dot"></span>
+            <p class="timeline-date">Language Study</p>
+            <h3>Institute of Modern Languages — University of Dhaka</h3>
+            <p>Developing communication and language skills that support collaboration, presentation, and global learning.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="time-dot"></span>
+            <p class="timeline-date">Previous</p>
+            <h3>Data Security and Vulnerability Trainee — CyberR Sys.Info Tech</h3>
+            <p>Worked around data security awareness, vulnerability thinking, and secure-system analysis exposure.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="time-dot"></span>
+            <p class="timeline-date">Previous</p>
+            <h3>Data Security Trainee — AVP Hybrid</h3>
+            <p>Gained experience in security-oriented analysis and structured handling of sensitive digital systems.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="time-dot"></span>
+            <p class="timeline-date">Earlier</p>
+            <h3>Junior Robotics Programmer — Notre Dame Science Club</h3>
+            <p>Explored robotics, programming, electronics and problem-solving through academic technical activity.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="time-dot"></span>
+            <p class="timeline-date">Earlier</p>
+            <h3>Notre Dame College, Dhaka</h3>
+            <p>Academic foundation in analytical thinking, communication, leadership and disciplined study habits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING ROADMAP -->
+    <section class="section-space" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Growth Roadmap</p>
+          <h2 id="roadmap-title">What I am improving next.</h2>
+        </div>
+        <div class="roadmap-grid reveal-group">
+          <article class="roadmap-card reveal"><h3>Advanced Front-End</h3><p>Component architecture, design systems, accessibility testing, animation performance and production deployment.</p></article>
+          <article class="roadmap-card reveal"><h3>Backend Reliability</h3><p>Authentication, API security, database normalization, testing, Docker workflow and deployment pipelines.</p></article>
+          <article class="roadmap-card reveal"><h3>AI/ML Application Layer</h3><p>Model packaging, Streamlit dashboards, explainable metrics, feature engineering and practical user-facing AI tools.</p></article>
+          <article class="roadmap-card reveal"><h3>Professional GitHub</h3><p>Clearer READMEs, issue templates, architecture diagrams, releases and GitHub Pages demos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB STRATEGY -->
+    <section class="section-space compact" aria-labelledby="github-title">
+      <div class="container split-panel reveal">
+        <div>
+          <p class="eyebrow">GitHub Presentation</p>
+          <h2 id="github-title">How I organize my work for review.</h2>
+        </div>
+        <div>
+          <p>Every serious project should explain the problem, tech stack, features, installation steps, usage, screenshots, architecture and future improvements. My goal is to make each repository easy for recruiters and technical reviewers to understand within two minutes.</p>
+          <a class="text-link" href="https://github.com/addin-alt?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / WHAT I CAN DO -->
+    <section class="section-space" aria-labelledby="capability-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">What I Can Build</p>
+          <h2 id="capability-title">Practical software capabilities.</h2>
+        </div>
+        <div class="capability-grid reveal-group">
+          <article class="capability-card reveal"><h3>Portfolio & Landing Pages</h3><p>Modern responsive sites with clean UI, form sections, project cards and conversion-focused sections.</p></article>
+          <article class="capability-card reveal"><h3>Student & Business Utilities</h3><p>Calculators, trackers, management dashboards, simple automation apps and productivity tools.</p></article>
+          <article class="capability-card reveal"><h3>Python APIs and Tools</h3><p>FastAPI applications, CLI utilities, SQLite-backed storage, automation scripts and data workflows.</p></article>
+          <article class="capability-card reveal"><h3>Machine Learning Notebooks</h3><p>Exploratory analysis, preprocessing, model training, evaluation metrics and visual reporting.</p></article>
+          <article class="capability-card reveal"><h3>Security-Oriented Utilities</h3><p>Password tools, DFA access logic, validation flows and secure-system thinking for small applications.</p></article>
+          <article class="capability-card reveal"><h3>Documentation</h3><p>README, setup guide, architecture notes, feature explanation and recruiter-facing project presentation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section-space" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s connect professionally.</h2>
+          <br><br>
+          <div class="contact-links">
+ 
+
+  <a href="https://linkedin.com/in/addin-alt-" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/addin-alt" target="_blank" rel="noreferrer" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://facebook.com/addin.alt" target="_blank" rel="noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/addin_alt/" target="_blank" rel="noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" name="portfolio-contact" method="POST" action="https://formspree.io/f/xlgyndak">
+          <input type="hidden" name="_subject" value="New message from Al Addin portfolio" />
+          <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="your.email@example.com" required />
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" placeholder="Project / Internship / Collaboration" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <button class="btn secondary" type="button" id="copyEmail">Copy Email</button>
+          </div>
+          <p class="form-note" id="formStatus" aria-live="polite"></p>
+          <p class="form-note muted" id="copyNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Al Addin. All rights reserved.</p>
+      <a href="#top">Back to top</a>
     </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
