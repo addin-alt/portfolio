@@ -25,3 +25,5 @@ addin-professional-portfolio/
     ├── profile-placeholder.svg
     └── Addin_resume.pdf  
 ```
+
+Badge practice update 2.
